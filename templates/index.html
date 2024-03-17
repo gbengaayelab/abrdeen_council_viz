@@ -3,22 +3,42 @@
     {% include 'header.html' %}
     <body>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1470092306007-055b6797ca72?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80')">
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1584291527908-033f4d6542c8?q=80&w=2525&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>Clean Blog</h1>
-                            <span class="subheading">A Blog Theme by Lewis Onodje</span>
+                            <h1>Aberdeen Council Viz</h1>
+                            <span class="subheading">Making Aberdeen Council Data More Accessible</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Additional Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box-grid"> 
+                        <div class="box box-1"></div>
+                        <div class="box box-2"></div>
+                        <div class="box box-3"></div>
+                        <div class="box box-4"></div>
+                        <div class="box box-5"></div>
+                        <div class="box box-6"></div>
+                        <div class="box box-7"></div>
+                        <div class="box box-8"></div>
+                        <div class="box box-9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Main Content-->
         <div class="container px-4 px-lg-5">
+            
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
+                    
                     <!-- Post preview-->
                     {% for post in posts %}
                         {% set i = loop.index0 %}
@@ -27,6 +47,7 @@
                                 <h2 class="post-title">{{ post["title"] }}</h2>
                                 <h3 class="post-subtitle">{{ post["subtitle"] }}</h3>
                             </a>
+                            
                             <p class="post-meta">
                                 Posted by
                                 <a href="#!">Lewis Onodje</a>
@@ -39,8 +60,12 @@
                     <!-- Pager-->
                     <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
+                
             </div>
         </div>
+
+        
+
         <!-- Footer-->
         {% include 'footer.html' %}
         <!-- Bootstrap core JS-->

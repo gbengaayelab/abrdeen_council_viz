@@ -30,7 +30,7 @@ def send_email(name, email, phone, message):
 @app.route("/")
 def home():
 	return render_template("index.html", posts=posts, today=today)
-
+	# return render_template("committee.html")
 
 @app.route("/about")
 def about():
